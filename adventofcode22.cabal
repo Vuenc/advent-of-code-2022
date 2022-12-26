@@ -1,0 +1,42 @@
+cabal-version:      2.4
+name:               adventofcode22
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            NONE
+author:             Vuenc
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable adventofcode22
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules: Day1, Day2, Day3, Day4, Day5, Day6, Day7, Day13, Day14, Day8, Day10, Day9, Day12, Day16, Day18, Day11, Day15, Day23, Day17, Day20, Day22, Day24, Day19, Day25
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base >= 4.8,
+        split,
+        regex-tdfa,
+        containers,
+        regex-posix,
+        repa,
+        array,
+        dijkstra-simple,
+        monad-dijkstra,
+        search-algorithms,
+        MissingH
+    hs-source-dirs:   .
+    default-language: Haskell2010
